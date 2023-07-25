@@ -1,30 +1,13 @@
-import './App.css';
-
+import "./App.css";
+import Nav from "./Components/Nav";
+import Main from "./Components/Main";
+import Footer from "./Components/Footer";
 function App() {
   return (
-    <div className='app'>
-      
-      <nav className='navbar'>
-
-        <div className='login'>
-          <h1>Login</h1>
-        </div>  
-        
-          <div className='ha'>
-            <h2>Home</h2>
-            <h2>About</h2>
-          </div>
-      
-      </nav>
-
-      <main>
-        
-      </main>
-      <footer>
-        <h3>
-          Elijah Ohanya application @ 2023
-        </h3>
-      </footer>
+    <div className="app">
+      <Nav />
+      <Main />
+      <Footer/>     
     </div>
   );
 }
