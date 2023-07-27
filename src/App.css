@@ -1,46 +1,47 @@
 *{
-  /* border:1px solid; */
+  border:1px solid;
   box-sizing: border-box;
   margin: 0;
   padding:0;
 }
 
 .app{
-  background-color: bisque;
+  background-color: rgb(234, 250, 12);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-.navbar{
-  background-color: grey;
+nav{
+  background-color: rgb(250, 12, 12);
   min-height: 10vh;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
-.login{
+.phone{
   display: flex;
-  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  font-size: 25px;
 }
 
-.ha{
+.ls{
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-  align-items: center
 }
 
 main{
   min-height: 80vh;
-
 }
 
 footer{
-  background-color: gray;
+  background-color: rgb(250, 12, 12);
   min-height: 10vh;
   display: flex;
+  font-size: 22px;
   align-items: center;
   justify-content: center;
 }
