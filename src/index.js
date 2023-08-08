@@ -17,22 +17,22 @@ root.render(
 reportWebVitals();
 
 
-function app() {
-  const list = ['oge', 'bolu', 'phebe', 'runke'];
-  const randin = Math.floor(Math.random() * list.length);
-  return list[randin];
+// function app() {
+//   const list = ['oge', 'bolu', 'phebe', 'runke'];
+//   const randin = Math.floor(Math.random() * list.length);
+//   return list[randin];
   
-  // return (
-  //   <div className='container'>
-  //     <h1>
+//   // return (
+//   //   <div className='container'>
+//   //     <h1>
 
-  //     </h1>
-  //   </div>
-  // )
-
-
+//   //     </h1>
+//   //   </div>
+//   // )
 
 
 
-}
-document.appendChild(app)
+
+
+// }
+// document.appendChild(app)
