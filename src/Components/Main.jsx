@@ -1,6 +1,8 @@
 import React from "react";
 
 const Main = (prop) => {
+  const ronal='ronaldo'
+  const listofplayers=['messi','neymar',ronal]
   return (
     <main
       style={{
@@ -10,7 +12,7 @@ const Main = (prop) => {
         fontSize: "22px",
       }}
     >
-          <h1>{prop.mainname}</h1> <hr />
+          <h1>{prop.mainname}</h1> 
 {/* render list in react */}
           <div>
               {
@@ -23,7 +25,21 @@ const Main = (prop) => {
                           </div>
                       );
                   })
-              }
+        }
+         <ul>
+          {
+            listofplayers.map(player => {
+              console.log(player)
+              return (
+                
+                <div>
+                  <h1>{player}</h1><br /><hr />
+                </div>
+                
+              )
+            })
+          }
+        </ul>
           </div>
       
        

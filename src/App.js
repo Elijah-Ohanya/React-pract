@@ -9,6 +9,7 @@ const App = () => {
   const [items, setItems] = useState(
     data
   );
+  
   return (
     <>
       <Header appname="groceries list" />
