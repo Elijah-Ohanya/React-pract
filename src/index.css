@@ -1,1 +1,33 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 1px solid;
+}
 
+.App{
+    min-height: 100vh;
+    background-color: rgba(127, 255, 212, 0.663);
+}
+
+nav{
+    min-height: 10vh;
+    background-color: darkblue;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+main{
+    min-height: 80vh;
+    background-color: white;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+    color: white;
+    background-color: darkblue;
+}
