@@ -1,30 +1,28 @@
+import React from 'react'
 import Header from './Components/Header'
 import Main from './Components/Main'
 import Footer from './Components/Footer'
 
 const App = () => {
-  const h1 = 'Groceries List'
-  const h3 = 'Copyright @ 2023'
-  const listofobj = [
+  const listofcolor = [
     {
       id: 1,
-      name:'tele'
+      name:'blue'
     },
     {
       id: 2,
-      name:'chair'
+      name:'green'
     },
     {
       id: 3,
-      name:'table'
+      name:'white'
     }
-
   ]
   return (
-    <div className='App'>
-      <Header header={h1} />
-      <Main names={listofobj} />
-      <Footer footer={h3} />
+    <div>
+      <Header/>
+      <Main list={listofcolor} />
+      <Footer/>
     </div>
   )
 }

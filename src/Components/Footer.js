@@ -1,13 +1,9 @@
 import React from 'react'
 
-const Footer = (prop) => {
+const Footer = () => {
   return (
-      <footer>
-          <h3>
-              {
-                  prop.footer
-              }
-          </h3>
+    <footer>
+      
     </footer>
   )
 }
