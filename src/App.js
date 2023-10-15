@@ -7,15 +7,15 @@ const App = () => {
   const listofcolor = [
     {
       id: 1,
-      name:'blue'
+      name:'Blue'
     },
     {
       id: 2,
-      name:'green'
+      name:'Green'
     },
     {
       id: 3,
-      name:'white'
+      name:'White'
     }
   ]
   return (
