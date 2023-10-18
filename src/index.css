@@ -36,6 +36,10 @@ header{
     user-select: none;
 }
 
+.logo:hover{
+    box-shadow: -2px -5px 10px  white;    
+}
+
 .navigation a {
     position: relative;
     font-size: 1.1em;
@@ -106,6 +110,15 @@ header{
 
 }
 
+.wrapper .form-box.login{
+    /* display: none; */
+}
+
+.wrapper.form-box.register{
+    position: absolute;
+    transform: translateX(400px);
+}
+
 .form-box h2{
     font-size: 2em;
     color:#162938;
@@ -156,3 +169,57 @@ header{
     color: #162938;
     line-height: 57px;
 } */
+
+.remember-forgot{
+    font-size: .9em;
+    color: #162938;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input{
+    accent-color: #162938;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    color: #162938;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.btn{
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #ffff;
+    font-weight: 500;
+}
+
+.login-register{
+    font-size: .9em;
+    color: #162938;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login-register p a {
+    color: #162938;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-register p a :hover{
+    text-decoration: underline;
+}
