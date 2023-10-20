@@ -23,7 +23,7 @@ header{
     left: 0;
     width:100% ;
     padding:20px 100px;
-    background: red;
+    background-color: #162938;
     display: flex;
     justify-content:space-between ;
     align-items: center;
@@ -37,7 +37,8 @@ header{
 }
 
 .logo:hover{
-    box-shadow: -2px -5px 10px  white;    
+    box-shadow: 1px 0px 10px -15px white;  
+    font-size: 35px;  
 }
 
 .navigation a {
@@ -102,6 +103,16 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    /* overflow: hidden; */
+    transition: height .2s ease;
+}
+
+.wrapper-active{
+    height: 520px;
+}
+
+.reg{
+    padding-top: 10px;
 }
 
 .wrapper.form-box{
@@ -111,7 +122,27 @@ header{
 }
 
 .wrapper .form-box.login{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    transition: transform .18s ease;
+    transform: translateX(0);
     /* display: none; */
+}
+
+.wrapper .form-box.register{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    transition: transform .18s ease;
+    transform: translateX(400px);
+    display: none;
+}
+
+.wrapper.active.form-box.login{
+    transition:none;
+    transform: translateX(-400px);
+
 }
 
 .wrapper.form-box.register{
@@ -137,7 +168,7 @@ header{
     position: relative;
     top: 50%;
     left: 5px;
-    transform: translateY(-50%);
+    transform: translateX(-50%);
     font-size: 1em;
     color: #162938;
     font-weight: 500;
@@ -211,7 +242,7 @@ header{
     color: #162938;
     text-align: center;
     font-weight: 500;
-    margin: 25px 0 10px;
+    margin: 5px 0 5px;
 }
 
 .login-register p a {
@@ -220,6 +251,7 @@ header{
     font-weight: 600;
 }
 
-.login-register p a :hover{
+.login-register p a:hover{
     text-decoration: underline;
+
 }

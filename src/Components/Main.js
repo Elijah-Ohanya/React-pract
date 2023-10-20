@@ -2,10 +2,11 @@ import React from 'react'
 
 const Main = () => {
   return (
+    // THE PART/PAGE FOR LOGIN
     <div className='wrapper'>
       {/* for the icon */}
       {/* <span></span> */}
-        <div className='form-box login'>
+      <div className='form-box login'>
           <h2>Login</h2>
           <form action='#'>
             <div className='input-box'>
@@ -39,39 +40,31 @@ const Main = () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
+      {/* THE PART/PAGE FOR REGISTER */}
       <div className='form-box register'>
-          <h2>Registration</h2>
+          <h2 className='reg'>Registration</h2>
           <form action='#'>
             <div className='input-box'>
-              <span className='icon'></span>
+              {/* <span className='icon'></span> */}
             <input
               placeholder='Enter your name'
               type='text' required />
               <label>Username:</label>
-            </div>
+          </div>
+          <div className='input-box'>
+            <input
+            type='email'
+            placeholder='Your email address'/>
+            <label>Email:</label>
+          </div> 
             <div className='input-box'>
-              <span className='icon'></span>
+              {/* <span className='icon'></span> */}
             <input
               placeholder='Include your password required'
               type='password' required />
-            <label>Password:</label>
+            <label >Password:</label>
             
-          </div> <br></br><br></br>
+          </div> <br/><br/>
           <div className='remember-forgot'>
                       <label>
                           <input type='checkbox' />
@@ -82,7 +75,7 @@ const Main = () => {
           
           <button type='submit' className='btn'>Register</button>
                   <div className='login-register'>
-            <p>Already have an account <a href='#' className='login-link'>Login</a></p>
+            <p>Already have an account <a href='#Login' className='login-link'>Login</a></p>
             
                   </div>
           </form>
@@ -91,4 +84,4 @@ const Main = () => {
   )
 }
 
-export default Main
+export default Main;
